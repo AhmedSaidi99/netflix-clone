@@ -1,0 +1,49 @@
+.header {
+  color: white;
+  object-fit: contain;
+  height: 500px;
+  transition: all .5s;
+  &__content {
+    margin: 0 30px;
+    padding-top: 140px;
+    height: 200px;
+  }
+  &__title {
+    font-size: 3rem;
+    padding: 0.3rem 0;
+  }
+  &__desc {
+    width: 45rem;
+    line-height: 1.3;
+    padding-top: 1rem;
+    font-size: 0.8rem;
+    max-width: 350px;
+    height: 80px;
+  }
+  &__btn {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 2rem;
+    margin-right: 1rem;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+    transition: all 350ms;
+    &:hover {
+      background-color: white;
+      color: #000000;
+    }
+  }
+  &__gradiant {
+    height: 7rem;
+    padding-top: 300px;
+    background-image: linear-gradient(
+      180deg,
+      transparent,
+      rgba(0, 0, 0, 0.60),
+      rgba(0, 0, 0, 0.80),
+      #000
+    );
+  }
+}

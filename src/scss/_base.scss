@@ -1,0 +1,17 @@
+@import './fonts';
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}

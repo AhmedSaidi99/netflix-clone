@@ -1,0 +1,16 @@
+@import './base';
+
+.app {
+  background-color: #000;
+}
+
+footer {
+  padding: 50px;
+  text-align: center;
+  color: white;
+  a {
+    color: #e50914;
+    text-decoration: none;
+    font-weight: bold;
+  }
+}
