@@ -5,13 +5,14 @@ import '../scss/Header.scss'
 
 const Header = () => {
   const [movie, setMovie] = useState({})
-  
+
   useEffect(() => {
     async function fetchData() {
       const response = await instance.get(requests.fetchNetflixOriginals)
       setMovie(response.data.results[Math.floor(Math.random() * response.data.results.length)])
+      setTimeout(fetchData, 30000)
     }
-    setInterval(fetchData, 30000)
+    fetchData()
   }, [])
 
   const headerStyles = {
